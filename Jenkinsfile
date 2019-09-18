@@ -31,7 +31,7 @@ node('master') {
 		  emailext (
 		      subject: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
 		      body: "Build finish"
-		      recipientProviders: "sctan6688@gmail.com"
+		      to: "sctan6688@gmail.com"
 		  )
 	}
 }
